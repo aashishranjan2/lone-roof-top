@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.content-wrapper {
+  background: #777878;
+  height: calc(100vh - 10px);
+  text-align: center;
+}
+.cust-button {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  padding: 5px 10px;
+}
+.cust-button.active {
+  background-color: #be1bbe;
+  border-width: 0;
+}
+rect.active {
+  stroke-width: 0.1;
+  fill: #be1bbe;
+}
+@media (max-width: 780px) and (min-width: 320px) {
+  .App {
+    grid-template-columns: 100%;
+  }
+  .content-wrapper {
+    height: 50vh;
+  }
+}
